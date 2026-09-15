@@ -39,7 +39,7 @@ pipeline {
                     sh """
                         docker stop insurance-app-container || true
                         docker rm insurance-app-container || true
-                        docker run -d --name insurance-app-container -p 8080:8080 ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
+                        docker run -d --name insurance-app-container -p 8081:8080 ${ECR_REGISTRY}/${IMAGE_NAME}:${IMAGE_TAG}
                     """
                 }
             }
