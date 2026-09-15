@@ -1,9 +1,9 @@
 pipeline {
     agent any
     environment {
-        AWS_REGION = "us-east-1"
-        ECR_REGISTRY = "123456789012.dkr.ecr.us-east-1.amazonaws.com"
-        IMAGE_NAME = "insurance-app"
+        AWS_REGION = "ap-south-1"
+        ECR_REGISTRY = "470656906172.dkr.ecr.ap-south-1.amazonaws.com"
+        IMAGE_NAME = "june2026-1"
         IMAGE_TAG = "${env.BUILD_NUMBER}"
     }
     stages {
